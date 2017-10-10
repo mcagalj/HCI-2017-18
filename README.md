@@ -7,4 +7,4 @@ Osnovni cilj predmeta **Korinička sučelja** je upoznati studente s važnim asp
 Na ovom GitHub repozitoriju profesor će objavljivati upute, dijelove koda, konfiguracijske skripte, i druge sugestije a sa svrhom povećanja produktivnosti studenta tijekom rada na projektu.
 
 ### Bits of JavaScript
-U direktoriju [bits-of-javascript](/bits-of-javascript) možete naći niz JavaScript datoteka koje demonstriraju neke specifičnosti JavaScript programskog jezika. Skripte možete izvoditi direktno u konzolnom prozoru preglednika, iako preporučamo da koristite [Node.js](https://nodejs.org) odnosno [`nodemon`](https://nodemon.io) aplikaciju za automatsko pokretanje istih u komandnoj liniji vašeg operacijskog sustava.
+U direktoriju [bits-of-javascript](/bits-of-javascript) možete naći niz JavaScript datoteka koje demonstriraju neke specifičnosti JavaScript programskog jezika. Skripte možete izvoditi direktno u konzolnom prozoru preglednika, iako preporučamo da koristite [Node.js](https://nodejs.org) odnosno [`nodemon`](https://nodemon.io) aplikaciju za automatsko pokretanje istih u konzolnom prozoru vašeg operacijskog sustava.
