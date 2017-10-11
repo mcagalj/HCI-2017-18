@@ -1,6 +1,7 @@
 /**
  * Difference between the strict and non-strict mode.
  * http://qnimate.com/javascript-strict-mode-in-nutshell
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
  */ 
 'use strict'
 
@@ -12,7 +13,10 @@ delimiter(1)
 let obj = {a: 1, b: 2}
 log(obj)
 
-// 'this' reference in strict mode is 'undefined'
+// 'this' reference in strict mode is 'undefined'.
+// This is good from the security point of view as
+// it would not be possible to reference the 'window' 
+// object (in browser) through 'this'.
 function this_in_strict() {
     log(this)
 }
@@ -27,9 +31,10 @@ delimiter(2)
 // log(test)
 
 let test = 'test'
-//let test = 'best'
+// let test = 'best'
+// var test = 'test'
 {
-    //var test = 'best'
+    // var test = 'best'
     let test = 'best'
 }
 log(test)
