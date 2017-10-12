@@ -43,3 +43,6 @@ let cooperative_delay = (ms, resolution=50) => {
 
 delimiter(2)
 cooperative_delay(10000)
+
+
+const web_worker_A = new Worker()
