@@ -84,8 +84,6 @@ class Animal {
     constructor(name) {
         this.name = name
     }
-
-  	fun() {}
   
     sayHello() {
         log(`Animal ${this.name} says hello.`)
