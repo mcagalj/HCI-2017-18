@@ -3,8 +3,23 @@
 <head>
 <meta charset="UTF-8" />
 <title>Web Worker</title>
-<script src="js/web_worker.js"></script>
-<script src="js/main.js"></script>
+    <style>
+        body {
+            max-width: 600px;
+            margin: 0 auto;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        ul:hover ~ #tooltip {
+           display: inline-block; 
+        }
+
+        #tooltip {
+            display: none;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            padding: 0.5em;
+        }
+    </style>
 </head>
 <body>
     <h1>Hello Web Workers</h1>
@@ -15,7 +30,10 @@
         <li><a href="https://www.google.com">Google</a></li>
         <li><a href="https://www.google.com">Google</a></li>
         <li><a href="https://www.google.com">Google</a></li>
-        <li><a href="https://www.google.com">Google</a></li>
-    </ul>     
+        <li><a href="https://www.google.com">Google</a></li>        
+    </ul>
+    <div id="tooltip">Google</div>
+    <script src="js/web_worker.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

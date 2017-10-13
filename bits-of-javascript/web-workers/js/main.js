@@ -3,6 +3,11 @@
 let log = console.log
 let delimiter = title => log('\n' + '-'.repeat(20) + ' ' + title + ' ' + '-'.repeat(20))
 
+let delay = ms => {
+    let start_time = Date.now()
+    while(Date.now() < start_time + ms) {}
+}
+
 if (window.Worker) {
     // Normally you would create a new web worker object as follows:
     // const web_worker = new Worker('my_web_worker.js').
