@@ -65,7 +65,7 @@ log(`Fun.prototype.valueOf == Object.prototype.valueOf [${Fun.prototype.valueOf 
 
 let obj_D = Object.create(obj_A)
 
-delimiter(6)
+delimiter(7)
 log('obj_D:', obj_D)
 log('obj_D.__proto__:', Object.getPrototypeOf(obj_D))
 log(`{obj_D.a, obj_D.b}: {${obj_D.a}, ${obj_D.b}}`)
@@ -109,7 +109,7 @@ class Cat extends Animal {
 let dog_A = new Dog('Rex')
 let cat_A = new Cat('Tom')
 
-delimiter(7)
+delimiter(8)
 dog_A.sayHello()
 cat_A.sayHello()
 

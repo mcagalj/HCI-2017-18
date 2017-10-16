@@ -1,5 +1,6 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop
 // https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers
+// Excellent gist: https://gist.github.com/gokulkrishh/d493ecdcb0e2dbb6fe5ad3e678dd9f89
 'use stict'
 
 let log = console.log
@@ -14,13 +15,12 @@ function delay(ms, logging=false) {
 
 delimiter(1)
 log('[*] Before delay()')
-delay(1000, true)
+delay(5000, true)
 log('[*] After delay()')
 
 // delay(5000) vs cooperative_delay(5000)
 // Here we demonstrate JavaScript concurrency model
 // based on an 'event loop'
-// Excellent gist: https://gist.github.com/gokulkrishh/d493ecdcb0e2dbb6fe5ad3e678dd9f89
 
 let delay_2 = (ms, whole_part, reminder) => {
     delay(ms)
