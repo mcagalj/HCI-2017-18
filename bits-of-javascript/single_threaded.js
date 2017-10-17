@@ -22,12 +22,12 @@ log('[*] After delay()')
 // Here we demonstrate JavaScript concurrency model
 // based on an 'event loop'
 
-let delay_2 = (ms, whole_part, reminder) => {
-    delay(ms)
+let delay_2 = (resolution, whole_part, reminder) => {
+    delay(resolution)
 
     if (whole_part > 0) {
         whole_part--
-        setTimeout(() => delay_2(ms, whole_part), 0) 
+        setTimeout(() => delay_2(resolution, whole_part), 0) 
     } else {
         delay(reminder)
         log('[*] Cooperative timer expired at', Date.now()/1000)

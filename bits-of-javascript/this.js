@@ -37,6 +37,7 @@ log('obj_A.fun_D():', obj_A.fun_D())
 
 delimiter(3)
 global.a = 'HCI@FESB'
+global.b = 'HCI@FESBv2'
 try {
     log('fun_C():', fun_C())
     log('fun_D():', fun_D())
