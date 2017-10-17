@@ -52,7 +52,7 @@ function fun_E() {
     log('[+] this =', this)    
     
     setTimeout(() => {
-        log(`\n[*] Timer expired [${fun_F.name}]`)
+        log(`\n[*] Timer expired [${fun_E.name}]`)
         log('[+] timer_expired =', this.timer_expired)
         log(`[+] ${this.constructor.name}: this == obj_B [${this == obj_B}]`)
     }, 2000)
