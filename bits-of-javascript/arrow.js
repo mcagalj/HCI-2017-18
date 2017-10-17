@@ -40,7 +40,7 @@ function fun_D() {
     log('[+] this =', this)    
     
     setTimeout(function() {
-        log(`\n[+] Timer expired [${fun_D.name}]`)
+        log(`\n[*] Timer expired [${fun_D.name}]`)
         log('[+] timer_expired =', this.timer_expired)
         log(`[+] ${this.constructor.name}: this == obj_B [${this == obj_B}]`)
     }, 1000)
@@ -52,7 +52,7 @@ function fun_E() {
     log('[+] this =', this)    
     
     setTimeout(() => {
-        log(`\n[+] Timer expired [${fun_F.name}]`)
+        log(`\n[*] Timer expired [${fun_F.name}]`)
         log('[+] timer_expired =', this.timer_expired)
         log(`[+] ${this.constructor.name}: this == obj_B [${this == obj_B}]`)
     }, 2000)
@@ -63,7 +63,7 @@ function fun_F() {
     log(`[*] Starting timer... [${fun_F.name}]`)
 
     function callback() {
-        log(`\n[+] Timer expired [${fun_F.name}]`)
+        log(`\n[*] Timer expired [${fun_F.name}]`)
         log('[+] timer_expired =', this.timer_expired)
         log(`[+] ${this.constructor.name}: this == obj_B [${this == obj_B}]`)        
     }
