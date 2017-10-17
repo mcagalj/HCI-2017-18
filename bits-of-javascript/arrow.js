@@ -61,7 +61,8 @@ function fun_E() {
 
 function fun_F() {
     log(`[*] Starting timer... [${fun_F.name}]`)
-
+    log('[+] this =', this)    
+    
     function callback() {
         log(`\n[*] Timer expired [${fun_F.name}]`)
         log('[+] timer_expired =', this.timer_expired)
