@@ -7,18 +7,18 @@
     let delimiter = title => log('\n' + '-'.repeat(20) + ' ' + title + ' ' + '-'.repeat(20))
 
     let my_func = async function() {
-        delimiter('Promise')
-        log('[*] Generating enc/dec key...')
+        delimiter('Classical callback')
+        log('[*] Callback: Generating enc/dec key...')
         crypto.subtle.generateKey({name: 'AES-CTR', length: 256}, true, ['encrypt', 'decrypt'])
-            .then(key => log(`[+] crypto_key: ${key}`))
-        log('[*] Enc/dec key done.')
+            .then(key => log(`[+] Calback: key ${key}`))
+        log('[*] Callback: Enc/dec key done.')
         
         
         delimiter('Await')
-        log('[*] Generating enc/dec key...')
+        log('[*] Await: Generating enc/dec key...')
         const crypto_key = await crypto.subtle.generateKey({name: 'AES-CTR', length: 256}, true, ['encrypt', 'decrypt'])
-        log(`[+] crypto_key: ${crypto_key}`)
-        log('[*] Enc/dec key done.')
+        log(`[+] Await: key: ${crypto_key}`)
+        log('[*] Await: Enc/dec key done.')
     }
 
     my_func()
