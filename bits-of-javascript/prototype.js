@@ -13,6 +13,8 @@ let obj_A_prototype = Object.getPrototypeOf(obj_A)
 let obj_B_prototype = Object.getPrototypeOf(obj_B)
 
 delimiter(1)
+log(obj_A)
+log(obj_B)
 log(`obj_A == obj_B [${obj_A == obj_B}]`)
 log(`obj_A.hasOwnProperty('a') [${obj_A.hasOwnProperty('a')}]`)
 log(`obj_A.hasOwnProperty('c') [${obj_A.hasOwnProperty('c')}]`)

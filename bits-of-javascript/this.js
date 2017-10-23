@@ -35,6 +35,7 @@ log(`obj_A.fun_A() == obj_A [${obj_A.fun_A() == obj_A}]`)
 log('obj_A.fun_A():', obj_A.fun_A())
 log('obj_A.fun_D():', obj_A.fun_D())
 
+
 delimiter(3)
 global.a = 'HCI@FESB'
 global.b = 'HCI@FESBv2'
