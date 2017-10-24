@@ -43,6 +43,7 @@ function fun_D() {
         log(`\n[*] Timer expired [${fun_D.name}]`)
         log('[+] timer_expired =', this.timer_expired)
         log(`[+] ${this.constructor.name}: this == obj_B [${this == obj_B}]`)
+        log(this)
     }, 1000)
 }
 
@@ -55,6 +56,7 @@ function fun_E() {
         log(`\n[*] Timer expired [${fun_E.name}]`)
         log('[+] timer_expired =', this.timer_expired)
         log(`[+] ${this.constructor.name}: this == obj_B [${this == obj_B}]`)
+        log(this)
     }, 2000)
 }
 
@@ -67,6 +69,7 @@ function fun_F() {
         log(`\n[*] Timer expired [${fun_F.name}]`)
         log('[+] timer_expired =', this.timer_expired)
         log(`[+] ${this.constructor.name}: this == obj_B [${this == obj_B}]`)        
+        log(this)
     }
 
     setTimeout(callback.bind(this), 3000)
@@ -99,3 +102,22 @@ let multiply_by_5 = multiply_arrow(5)
 for (let i in my_array) {
     log(my_array[i], multiply_by_5(my_array[i]))
 }
+
+const private_properties = (function() {
+    let private_variable = 1
+
+    return {
+        increment() {
+            private_variable +=1
+        },
+
+        read_private_variable(){
+            return private_variable
+        }
+    }
+})()
+
+delimiter('private variables')
+log(private_properties.read_private_variable())
+private_properties.increment()
+log(private_properties.read_private_variable())

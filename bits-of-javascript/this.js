@@ -58,6 +58,7 @@ obj_B.fun_D_nonbound = fun_D
 obj_B.fun_D_bound = fun_D.bind(obj_B)
 
 delimiter(4)
+log(obj_B)
 log('obj_B.fun_D_nonbound():', obj_B.fun_D_nonbound())
 log('obj_B.fun_D_bound():', obj_B.fun_D_bound())
 
@@ -68,6 +69,7 @@ obj_C = {
 }
 
 delimiter(5)
+log(obj_C)
 log('obj_C.fun_nonbound() [not bound to obj_B]:', obj_C.fun_nonbound())
 log('obj_C.fun_bound() [bound to obj_B]:', obj_C.fun_bound())
 
