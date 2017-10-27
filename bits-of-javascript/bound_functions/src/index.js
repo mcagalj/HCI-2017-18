@@ -17,5 +17,5 @@ const App = () => (
 
 ReactDOM.render(<App/>, document.getElementById('root'))
 
-// // Supporting hot module reloading (HMR)
+// Supporting hot module reloading (HMR)
 if (module.hot) module.hot.accept();
