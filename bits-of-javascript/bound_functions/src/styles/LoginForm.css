@@ -1,0 +1,42 @@
+.LoginForm {
+    display: grid;
+    grid-row-gap: 0.5em;
+    grid-template-columns: 400px;
+    font-size: 1.1em;
+}
+
+.LoginForm .emph {
+    color: orangered;
+}
+
+.LoginForm input {
+    outline: none;
+    border: solid 1px #dcdcdc;
+}
+
+.LoginForm input:focus {
+    border-color: #969696;
+    box-shadow: 0 0 5px 0px #969696;    
+}
+
+.LoginForm .button, input {
+    padding: 0.5em;
+    font-size: inherit;
+}
+
+.LoginForm .button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.LoginForm .alert {
+    border-color: orangered !important;
+    box-shadow: 0 0 5px 0px orangered !important;    
+}
+
+.LoginForm .submit-alert {
+    background-color: orangered !important;
+}
