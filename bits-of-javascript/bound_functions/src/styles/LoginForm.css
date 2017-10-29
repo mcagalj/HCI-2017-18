@@ -3,6 +3,7 @@
     grid-row-gap: 0.5em;
     grid-template-columns: 400px;
     font-size: 1.1em;
+    justify-items: stretch;
 }
 
 .LoginForm .emph {

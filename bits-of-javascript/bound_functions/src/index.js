@@ -8,11 +8,9 @@ import LoginForm from 'components/LoginForm.jsx'
 
 const App = () => (
     <div className="container">
-        <h1 className="title">Visibility, feedback, constraints, signifiers</h1>
-        <div className="center">
-            <LoginForm minPassLength="10"/>
-        </div>
-    </div>    
+        <h1 className='center'>Visibility, feedback, constraints, signifiers</h1>
+        <LoginForm className='center' minPassLength='10'/>
+    </div>
 )
 
 ReactDOM.render(<App/>, document.getElementById('root'))

@@ -9,16 +9,14 @@ body {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
     min-width: 100vw;    
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    padding: 2em;
 }
 
 .center {
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
 }

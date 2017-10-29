@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import classnames from 'classnames'
 import SubmitButton from 'components/SubmitButton.jsx'
 import 'styles/LoginForm.css'
 
@@ -40,7 +41,7 @@ class LoginForm extends Component {
             button = <SubmitButton className={'submit-alert'} text={submitMessage()}/>
 
         return (
-            <div className="LoginForm">
+            <div className={classnames('LoginForm', this.props.className)}>
                 <p>Sign up with a <span className="emph">passphrase</span>:</p>
                 
                 <input autoFocus type="password" placeholder="Enter a passphrase"
