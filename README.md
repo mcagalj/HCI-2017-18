@@ -12,17 +12,17 @@ Na ovom GitHub repozitoriju profesor će objavljivati upute, dijelove koda, konf
 - [Bits of React](#bits-of-react)
 - [Bits of CSS Layout](#bits-of-css-layout)
 
-### Bits of JavaScript
+## Bits of JavaScript
 
 U direktoriju [bits-of-javascript](/bits-of-javascript) možete naći niz JavaScript datoteka koje demonstriraju neke specifičnosti JavaScript programskog jezika. Skripte možete izvoditi direktno u konzolnom prozoru preglednika, iako preporučamo da koristite [Node.js](https://nodejs.org) odnosno [`nodemon`](https://nodemon.io) aplikaciju za automatsko pokretanje istih u konzolnom prozoru vašeg operacijskog sustava.
 
-### Bits of React
+## Bits of React
 
 U direktoriju [bits-of-react](/bits-of-react) možete naći niz primjera React komponenti. Osim JavaScript datoteka koje opisuju pojedine komponente, u direktoriju možete naći i popratne konfiguracijske skripte (npr., `webpack.config.js` i `package.json`) koje automatiziraju i olakšavaju razvoj komponenti kao i genriranje produkcijskog koda.
 
 Primjere iz ovog direktorija možete pokretati na nekoliko načina kako je opisano u nastavku. Prije svega trebate instalirati stabilnu verziju [Node.js-a](https://nodejs.org). Nakon uspješne instalacije testirajte, u komandnom prozoru, `npm` aplikaciju. `npm` aplikaciju će te koristiti za instalaciju potrebnih JavaScript modula/applikacija/biblioteka kao i za pokretanje razvojnog servera.
 
-#### Koraci za pokretanje primjera
+### Koraci za pokretanje primjera
 
 1. Nakon što ste klonirali ovaj repozitoriji (ili kopirali ovaj direktorij), u komandnom prozoru pozicionirajte se u direktorij s odgovarajućom komponentom (npr. `first-component`) i izvršite sljedeću naredbu:
     ```Bash
@@ -44,7 +44,7 @@ Primjere iz ovog direktorija možete pokretati na nekoliko načina kako je opisa
     ```
 Ova naredba će generirati `index.html` i odgovarajuće JavaScript/CSS datoteke, te ih pohraniti u direktorij `first-component/public`. Primjer sada možete pokrenuti jednostavnim otvaranjem datoteke `index.html` u odgovarajućem pregledniku.
 
-### Bits of CSS Layout
+## Bits of CSS Layout
 
 U direktoriju [bits-of-layout](/bits-of-layout) možete naći primjer korištenja CSS _Grid_ i _Flexbox_ sustava za  realizaciju složenih web starnica. Primjer također demonstrira uporabu `@support` i `@media` upita. Testirajte promjenom veličine prozora (_breakpoint_ za mobilnu verziju postavljen je na 400px).
 
