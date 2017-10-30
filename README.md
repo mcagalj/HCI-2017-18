@@ -45,10 +45,11 @@ Primjere iz ovog direktorija možete pokretati na nekoliko načina kako je opisa
 Ova naredba će generirati `index.html` i odgovarajuće JavaScript/CSS datoteke, te ih pohraniti u direktorij `first-component/public`. Primjer sada možete pokrenuti jednostavnim otvaranjem datoteke `index.html` u odgovarajućem pregledniku.
 
 ### Bits of CSS Layout
-U direktoriju [bits-of-layout](/bits-of-layout) možete naći primjer korištenja CSS _Grid_ i _Flexbox_ sustava za  realizaciju složenih web starnica. Primjer također demonstrira uporabu `@support` i `@media` upita.
+
+U direktoriju [bits-of-layout](/bits-of-layout) možete naći primjer korištenja CSS _Grid_ i _Flexbox_ sustava za  realizaciju složenih web starnica. Primjer također demonstrira uporabu `@support` i `@media` upita. Testirajte promjenom veličine prozora (_breakpoint_ za mobilnu verziju postavljen je na 400px).
 
 Na slici u nastavu su dane skice mobilne i desktop verzije stranice koje želimo realizirati.
 
 <p align="center">
-<img src="./img/layout.png"width="500px"/>
+    <img src="./img/layout.png"width="500px"/>
 </p>
