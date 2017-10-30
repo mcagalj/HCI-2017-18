@@ -48,7 +48,7 @@ Ova naredba će generirati `index.html` i odgovarajuće JavaScript/CSS datoteke,
 
 U direktoriju [bits-of-layout](/bits-of-layout) možete naći primjer korištenja CSS _Grid_ i _Flexbox_ sustava za  jednostavno pozicioniranje HTML elemenata. Primjer također demonstrira uporabu `@support` i `@media` upita. Testirajte primjer promjenom veličine prozora (_breakpoint_ za mobilnu verziju postavljen je na 400px).
 
-U nastavku su dane skice mobilne i desktop verzije stranice koje želimo realizirati.
+U nastavku su dane skice mobilne i desktop verzije stranice koje smo realizirati primjenom navedenih tehnika.
 
 <p align="center">
     <img src="./img/layout.png"width="500px"/>
