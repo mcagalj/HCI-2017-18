@@ -10,7 +10,7 @@ Na ovom GitHub repozitoriju profesor će objavljivati upute, dijelove koda, konf
 
 - [Bits of JavaScript](#bits-of-javascript)
 - [Bits of React](#bits-of-react)
-- [Bits of CSS Layout](#bits-of-layout)
+- [Bits of CSS Layout](#bits-of-css-layout)
 
 ### Bits of JavaScript
 
