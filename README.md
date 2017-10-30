@@ -40,9 +40,9 @@ Primjere iz ovog direktorija možete pokretati na nekoliko načina kako je opisa
 
 **NAPOMENA**: Ukoliko želite primjer pokrenuti bez uporabe razvojnog web servera, u koraku 2. potrebano je dati nalog za generiranje produkcijskog koda:
 
-    ```Bash
-    npm run prod
-    ```
+```Bash
+npm run prod
+```
     
 Ova naredba će generirati `index.html` i odgovarajuće JavaScript/CSS datoteke u direktoriju `first-component/public`. Primjer sada možete pokrenuti jednostavnim otvaranjem datoteke `index.html` u odgovarajućem pregledniku.
 
