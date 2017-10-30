@@ -53,3 +53,13 @@ Na slici u nastavu su dane skice mobilne i desktop verzije stranice koje želimo
 <p align="center">
     <img src="./img/layout.png"width="500px"/>
 </p>
+
+Nekoliko zanimljivih referenci:
+
+- [Grid by Example by Rachel Andrew](https://gridbyexample.com)
+
+- [CSS Grid Layout by MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+
+- [A Complete Guide to Flexbox by CSS-TRICKS](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+- [A Complete Guide to Grid by CSS-TRICKS](https://css-tricks.com/snippets/css/complete-guide-grid/)
