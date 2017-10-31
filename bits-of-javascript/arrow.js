@@ -9,6 +9,7 @@ let fun_arrow_A = () => log('Hello world')
 let fun_B = function(arg) { log(arg) }
 let fun_arrow_B = arg => log(arg)
 
+// Try fun_arrow_B in Babel
 delimiter(1)
 fun_A()
 fun_arrow_A()
@@ -19,9 +20,7 @@ fun_arrow_B(arg)
 
 let obj_A = {
     name: 'obj_A',
-    fun_C: function() {
-        return this.name
-    },
+    fun_C: function() { return this.name },
     fun_C_arrow: () => this.name
 }
 
@@ -37,39 +36,36 @@ let obj_B = {
 
 function fun_D() {
     log(`[*] Starting timer... [${fun_D.name}]`)
-    log('[+] this =', this)    
+    log('[+] this:', this)    
     
     setTimeout(function() {
         log(`\n[*] Timer expired [${fun_D.name}]`)
-        log('[+] timer_expired =', this.timer_expired)
-        log(`[+] ${this.constructor.name}: this == obj_B [${this == obj_B}]`)
-        log(this)
+        log('[+] this:', this)
+        log(`[+] this == obj_B [${this == obj_B}]`)
     }, 1000)
 }
 
 
 function fun_E() {
     log(`[*] Starting timer... [${fun_E.name}]`)
-    log('[+] this =', this)    
+    log('[+] this:', this)    
     
     setTimeout(() => {
         log(`\n[*] Timer expired [${fun_E.name}]`)
-        log('[+] timer_expired =', this.timer_expired)
-        log(`[+] ${this.constructor.name}: this == obj_B [${this == obj_B}]`)
-        log(this)
+        log('[+] this:', this)
+        log(`[+] this == obj_B [${this == obj_B}]`)
     }, 2000)
 }
 
 
 function fun_F() {
     log(`[*] Starting timer... [${fun_F.name}]`)
-    log('[+] this =', this)    
+    log('[+] this:', this)    
     
     function callback() {
         log(`\n[*] Timer expired [${fun_F.name}]`)
-        log('[+] timer_expired =', this.timer_expired)
-        log(`[+] ${this.constructor.name}: this == obj_B [${this == obj_B}]`)        
-        log(this)
+        log('[+] this:', this)
+        log(`[+] this == obj_B [${this == obj_B}]`)
     }
 
     setTimeout(callback.bind(this), 3000)

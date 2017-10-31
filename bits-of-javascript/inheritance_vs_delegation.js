@@ -99,8 +99,6 @@ delimiter('"Delegation-style" based implementation')
     dog_C.sayHello()
     dog_D.sayHello()
 
-    // log(dog_C.__proto__, Dog)
-    // log(Dog.__proto__, Animal)
-    log(`dog_A == dog_B [${dog_A == dog_B}]`)      
-    log(`dog_A.__proto__ == dog_B.__proto__ [${dog_A.__proto__ == dog_B.__proto__}]`)
+    log(`dog_C == dog_D [${dog_C == dog_D}]`)      
+    log(`dog_C.__proto__ == dog_D.__proto__ [${dog_C.__proto__ == dog_D.__proto__}]`)
 }
