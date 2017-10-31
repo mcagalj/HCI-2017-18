@@ -10,6 +10,18 @@ class LoginForm extends Component {
         this.handlePassChange = this.handlePassChange.bind(this)
     }
     
+    componentDidMount() {
+        console.log('LoginForm did mount.')    
+    }
+
+    componentWillUpdate = (nextProps, nextState) => {
+        console.log('LoginForm will update:', nextState)
+    }
+    
+    componentDidUpdate = (prevProps, prevState) => {
+        console.log('LoginForm did update:', prevState)
+    }
+    
     // Bind function explicitely in the constructor
     handlePassChange(event) {
         this.setState({pass: event.target.value})
