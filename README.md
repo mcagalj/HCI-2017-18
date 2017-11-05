@@ -20,7 +20,7 @@ U direktoriju [bits-of-javascript](/bits-of-javascript) možete naći niz JavaSc
 
 U direktoriju [bits-of-react](/bits-of-react) možete naći niz primjera React komponenti. Osim JavaScript datoteka koje opisuju pojedine komponente, u direktoriju možete naći i popratne konfiguracijske skripte (npr., `webpack.config.js` i `package.json`) koje automatiziraju i olakšavaju razvoj komponenti kao i genriranje produkcijskog koda.
 
-Primjere iz ovog direktorija možete pokretati na nekoliko načina kako je opisano u nastavku. Prije svega trebate instalirati stabilnu verziju [Node.js-a](https://nodejs.org). Nakon uspješne instalacije testirajte, u komandnom prozoru, `npm` aplikaciju. `npm` aplikaciju će te koristiti za instalaciju potrebnih JavaScript modula/applikacija/biblioteka kao i za pokretanje razvojnog servera.
+Primjere iz ovog direktorija možete pokretati na nekoliko načina kako je opisano u nastavku. Prije svega trebate instalirati stabilnu verziju [Node.js-a](https://nodejs.org). Nakon uspješne instalacije testirajte `npm` aplikaciju; u komandnom prozoru izvršite `npm`. `npm` će te koristiti za instalaciju potrebnih JavaScript modula/applikacija/biblioteka kao i za pokretanje razvojnog servera.
 
 ### Koraci za pokretanje primjera
 
