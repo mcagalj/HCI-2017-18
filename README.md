@@ -46,6 +46,16 @@ npm run prod
     
 Ova naredba će generirati `index.html` i odgovarajuće JavaScript/CSS datoteke u direktoriju `first-component/public`. Primjer sada možete pokrenuti jednostavnim otvaranjem datoteke `index.html` u odgovarajućem pregledniku.
 
+### Primjeri
+
+- [Jednostavna **Sign Up** forma](/bits-of-react/first-component) koja implementira neke od osnovnih Normanovih principa za dizajn interakcija (_visibility, constraint, feedback_).
+
+- [Primjena **React Router**](/bits-of-react/react-router) skupa React komponenti pogodnih za realizaciju napredne navigacije na klijentskoj strani (_client-side routing_). Primjer pokazuje realizaciju navigacije i kontrole pristupa _privatnim_ stranicama. Za više detalja konzultirajte službene stranice React Router-a: 
+    - [React Router: Learn Once, Route Anywhere](https://reacttraining.com/react-router).
+
+
+
+
 ## Bits of CSS Layout
 
 U direktoriju [bits-of-layout](/bits-of-layout) možete naći primjer korištenja CSS _Grid_ i _Flexbox_ sustava za  jednostavno pozicioniranje HTML elemenata. Primjer također demonstrira uporabu `@support` i `@media` upita. Testirajte primjer promjenom veličine prozora (_breakpoint_ za mobilnu verziju postavljen je na 400px).
