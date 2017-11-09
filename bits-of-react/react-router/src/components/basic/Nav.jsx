@@ -1,49 +1,58 @@
-import React, {Component} from 'react'
-import { 
-    NavLink, 
-    Redirect,
-    withRouter
-} from 'react-router-dom'
-
+import React, { Component } from 'react'
+import classnames from 'classnames'
 import 'styles/components/basic/Nav.css'
+import { NavLink } from 'react-router-dom'
 
+import Hamburger from 'components/basic/Hamburger.jsx'
+import LogoutButton from 'components/basic/LogoutButton.jsx'
 
-const LogoutButton = props => (
-    props.authenticator.authenticated ? (
-        <div                         
-            className={'Nav__link flex-end'}
-            onClick={() => {
-                props.authenticator.logout()                                
-                props.history.push(history.location)
-            }}
-        >
-            Logout
-        </div>
-    ) : (
-        null
-    )    
-)
+class Nav extends Component {    
+    constructor(props) {
+        super(props)
+    }
 
-const LogoutButtonWithRouter = withRouter(LogoutButton)
+    state = {
+        isMenuOpen: false
+    }
 
-const Nav = props => ( 
-    <nav className={'Nav__container'}>
-        <div className={'Nav__link-wrapper'}>
-            {
-                props.links.map((link, index) => (
-                        <NavLink                         
-                            key={index}
-                            className={'Nav__link'}
-                            activeClassName={'Nav--active'}
-                            to={`/${link.toLowerCase()}`}>
-                            {link}
-                        </NavLink>
-                ))
-            }
-        </div>
+    handleNavClick = () => this.setState({isMenuOpen: !this.state.isMenuOpen})
+
+    render() {
+
+        const navContainerClassName = classnames({
+            'Nav__container': !this.props.mobile,
+            'Nav__container--mobile': this.props.mobile 
+        })
+
+        const linkWrapperClassName = classnames({
+            'Nav__link-wrapper': !this.props.mobile,
+            'Nav__link-wrapper--mobile': this.props.mobile,
+            'Nav__link-wrapper--open': this.state.isMenuOpen && this.props.mobile
+        })
+
+        return (
+            <nav className={navContainerClassName}>        
+                <Hamburger onClick={this.handleNavClick}/>
         
-        <LogoutButtonWithRouter {...props} />    
-    </nav>
-)
+                <div className={linkWrapperClassName}>
+                    {
+                        this.props.links.map((link, index) => (
+                                <NavLink                         
+                                    key={index}
+                                    className={'Nav__link'}
+                                    activeClassName={'Nav--active'}
+                                    to={`/${link.toLowerCase()}`}
+                                    onClick={this.handleNavClick}>
+                                    {link}
+                                </NavLink>
+                        ))
+                    }
+                </div>
+        
+                <LogoutButton className={'Nav__link'} {...this.props} />
+            </nav>            
+        ) 
+    }
+}
 
 export default Nav

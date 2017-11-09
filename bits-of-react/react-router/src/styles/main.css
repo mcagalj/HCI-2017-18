@@ -1,5 +1,6 @@
 /* Colors */
 :root {
+    /* Colors */
     --main-color: #555;
     --alert-color: orangered;
 
@@ -8,6 +9,9 @@
     
     --color: black;
     --color-on-hover: white;
+
+    /* Layout */
+    --main-container-width: 800px;
 }   
 
 * {
@@ -24,12 +28,21 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr;
-    max-width: 800px;  
+    max-width: var(--main-container-width);  
     min-height: 100vh;
     align-items: center;
     justify-items: center;
     margin: 0 auto;
     grid-gap: 0.5em;
+}
+
+header {
+    margin: 0 auto;
+    max-width: var(--main-container-width);
+}
+
+main {
+    padding-top: 4em;
 }
 
 .header {
@@ -42,8 +55,12 @@ body {
     color: var(--alert-color);
 }
 
-.flex -end {
+.flex--end {
     justify-self: flex-end;
+}
+
+.flex--start {
+    justify-self: flex-start;
 }
 
 ul {

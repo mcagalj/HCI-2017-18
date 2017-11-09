@@ -7,7 +7,7 @@ const Private = () => (
     <div>
         <h2>Private</h2>
         <br/>
-        <Lorem mode="list" count="2" sentenceUpperBound="1"/>
+        <Lorem mode="list" count="2"/>
         <p>
             Winning lottery numbers:         
             <span className="alert">

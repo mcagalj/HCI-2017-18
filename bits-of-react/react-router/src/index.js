@@ -21,7 +21,9 @@ import LoginForm from 'components/basic/LoginForm.jsx'
 const links = ['Home', 'About', 'News', 'Private']
 
 
+//------------------------------------
 // Faking an authentication service
+//------------------------------------
 const authenticator = {
     authenticated: false,
 
@@ -35,28 +37,38 @@ const authenticator = {
     }
 }
 
+//------------------------------------
+// The main component
+//------------------------------------
 const App = () => (
-    <Router>
-        <div className="container">
-            <Nav links={links} authenticator={authenticator}/>
-            <h1 className='header'>React Router</h1>
-                                
-            <Route exact path="/" render={() => <Redirect to='/home'/>} />
-            <Route path="/home" component={Home}/>
-            <Route path="/about" component={About}/>
-            <Route path="/news" component={News}/>
-            <Route exact path="/login" render={() => 
-                <LoginForm 
-                    private="/private"
-                    authenticator={authenticator}
-                />
-            }/>
+    <Router>        
+        <div>
+            <header>
+                <Nav links={links} authenticator={authenticator}/>
+                <Nav mobile links={links} authenticator={authenticator}/>
+            </header>    
+                
+            <div className="container">            
+                <h1 className='header'>React Router</h1>
+                <main>
+                    <Route exact path="/" render={() => <Redirect to='/home'/>} />
+                    <Route path="/home" component={Home}/>
+                    <Route path="/about" component={About}/>
+                    <Route path="/news" component={News}/>
+                    <Route exact path="/login" render={() => 
+                        <LoginForm 
+                            private="/private"
+                            authenticator={authenticator}
+                        />
+                    }/>
 
-            <PrivateRoute path="/private"
-                component={Private}
-                authenticator={authenticator}
-                redirect={"/login"}
-            />
+                    <PrivateRoute path="/private"
+                        component={Private}
+                        authenticator={authenticator}
+                        redirect={"/login"}
+                    />
+                </main>
+            </div>
         </div>
     </Router>
 )
