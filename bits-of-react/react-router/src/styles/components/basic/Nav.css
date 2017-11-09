@@ -27,6 +27,7 @@
 
 .Nav__link-wrapper {
     display: none;
+    overflow-x: hidden;
 }
 
 .Nav__link-wrapper--mobile {
