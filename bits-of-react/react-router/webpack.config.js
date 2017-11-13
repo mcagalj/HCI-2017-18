@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const htmlConfig = {
-    title: 'Login component',
+    title: 'React router',
     template: path.resolve(__dirname, 'src', 'index.html'),
     stylesPath: 'css',
     scriptsPath: 'js'
@@ -41,7 +41,7 @@ module.exports = {
                     presets: ['env', 'react'],
                     plugins: [
                         'transform-object-rest-spread', 
-                        'transform-class-properties',
+                        'transform-class-properties'
                         // Enables dynamic loading of modules;
                         // useful for progressive web apps. 
                         // 'syntax-dynamic-import' 
