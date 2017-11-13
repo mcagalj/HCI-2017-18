@@ -6,7 +6,7 @@ Osnovni cilj predmeta **Korinička sučelja** je upoznati studente s važnim asp
 
 Na ovom GitHub repozitoriju profesor će objavljivati upute, dijelove koda, konfiguracijske skripte, i druge sugestije a sa svrhom povećanja produktivnosti studenta tijekom rada na projektu.
 
-### Table of Contents
+## Table of Contents
 
 - [Bits of JavaScript](#bits-of-javascript)
 - [Bits of React](#bits-of-react)
