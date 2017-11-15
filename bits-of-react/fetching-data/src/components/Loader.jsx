@@ -1,6 +1,6 @@
 import React from 'react'
 import classnames from 'classnames'
-import 'styles/Loader.css'
+import 'styles/components/Loader.css'
 
 export default (props) => {
     const { width, border } = props
@@ -17,6 +17,6 @@ export default (props) => {
     
     return (
         <div className={classnames('Loader__container', props.className)} style={styleContainer}>
-            <div className={'Loader'} style={styleLoader}/>
+            <div className='Loader' style={styleLoader}/>
         </div>
     )}

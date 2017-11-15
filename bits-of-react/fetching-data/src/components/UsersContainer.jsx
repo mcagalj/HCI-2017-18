@@ -1,14 +1,19 @@
-import React,  { Component } from 'react';
+import React,  { Component } from 'react'
+import 'styles/components/UsersContainer.css'
+
 import LoadingView from 'components/LoadingView.jsx'
 import ErrorView from 'components/ErrorView.jsx'
-import UsersView from 'components/UsersView.jsx'
+import UserView from 'components/UserView.jsx'
 
 export default ({ loading, users }) => {
-    if (loading) return <LoadingView/>
-    if (users) return (
-        <div style={{width: '40%'}}>
-            {users.map( (user, index) => <UsersView key={index} user={user}/>)}
+    
+    const Users = () => (
+        <div className='UsersContainer'>
+            {users.map((user, index) => <UserView key={index} user={user}/>)}
         </div>
     )
+
+    if (loading) return <LoadingView/>
+    if (users) return <Users/>
     return <ErrorView/>
 }
