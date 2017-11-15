@@ -1,0 +1,28 @@
+.UserView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;    
+}
+
+.UserView__figure {
+    position: relative;
+    margin: 0.5em;    
+}
+
+.UserView__loader {
+    width: 60%;
+}
+
+.UserView__img {
+    width: 50px; 
+    height: 50px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.75s linear; 
+}
+
+.UserView__img--show {
+    visibility: visible;
+    opacity: 1;
+}
