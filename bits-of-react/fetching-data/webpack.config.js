@@ -82,5 +82,5 @@ module.exports = {
         new webpack.NoEmitOnErrorsPlugin()         
     ],
 
-    devtool: isProduction ? 'none' : 'source-map'
+    devtool: 'source-map'
 };
