@@ -55,8 +55,7 @@ Ova naredba će generirati `index.html` i odgovarajuće JavaScript/CSS datoteke 
 
 - [Asinkrono dohvaćanje podataka](/bits-of-react/fetching-data)
 
-- [Web stranica kolegija](/bits-of-react/web-page) realizirana u React-u. Uz osnovne React i ReactDOM biblioteke, koristi se i React Router za navigaciju na klijentskoj strani (_client-side routing_). Također je ažurirana `webpack.config.js` datoteka. Posebno se vodilo računa o optimiranju produkcijskog koda (kojeg možete generirati izvršavanjem `npm run prod`). _Live_ verzija stranice dostupna je na:  
-[marjan.fesb.hr/~mcagalj/HCI/react](marjan.fesb.hr/~mcagalj/HCI/react).
+- [Web stranica kolegija](/bits-of-react/web-page) realizirana u React-u. Uz osnovne React i ReactDOM biblioteke, koristi se i React Router za navigaciju na klijentskoj strani (_client-side routing_). Također je ažurirana `webpack.config.js` datoteka. Posebno se vodilo računa o optimiranju produkcijskog koda (kojeg možete generirati izvršavanjem `npm run prod`). _Live_ verzija stranice dostupna je na: [marjan.fesb.hr/~mcagalj/HCI/react](marjan.fesb.hr/~mcagalj/HCI/react).
 
 
 ## Bits of CSS Layout
