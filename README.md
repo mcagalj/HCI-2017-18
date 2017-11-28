@@ -53,7 +53,10 @@ Ova naredba će generirati `index.html` i odgovarajuće JavaScript/CSS datoteke 
 - [Primjena **React Router**](/bits-of-react/react-router) skupa React komponenti pogodnih za realizaciju napredne navigacije na klijentskoj strani (_client-side routing_). Primjer pokazuje realizaciju navigacije i kontrole pristupa _privatnim_ stranicama. Za više detalja konzultirajte službene stranice React Router-a: 
     - [React Router: Learn Once, Route Anywhere](https://reacttraining.com/react-router).
 
+- [Asinkrono dohvaćanje podataka](/bits-of-react/fetching-data)
 
+- [Web stranica kolegija](/bits-of-react/web-page) realizirana u React-u. Uz osnovnu React i ReactDOM biblioteke, koristi se i React Router za navigaciju na klijentskoj strani (_client-side routing_). Također je ažurirana `webpack.config.js` datoteka. Posebno se vodilo računa o optimiranju produkcijskog koda (kojeg možete generirati izvršavanjem `npm run prod`). _Live_ verzija stranice dostupna je na:  
+[marjan.fesb.hr/~mcagalj/HCI/react](marjan.fesb.hr/~mcagalj/HCI/react).
 
 
 ## Bits of CSS Layout
