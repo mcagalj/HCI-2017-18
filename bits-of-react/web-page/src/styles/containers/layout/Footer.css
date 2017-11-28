@@ -4,12 +4,12 @@
     --link-color: rgb(100,149,237);
     --link-decorator-color: rgb(74, 110, 167);
 
-	overflow: auto;
-	width: 100%;
+    overflow: auto;
+    width: 100%;
     background-color: #2d2d2d;
     
     color: rgba(255,255,255,.9);
-	font-weight: 400;    
+    font-weight: 400;    
 }
 
 
