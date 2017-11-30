@@ -40,7 +40,7 @@ class App extends Component {
 
     async componentDidMount() {
         try {
-            const response = await fetch(this.props.data)
+            const response = await fetch(this.props.data, {cache: 'no-cache'})
             const data = await response.text()
             this.setState({loading: false, data: JSON.parse(data)})
         } catch(error) {
