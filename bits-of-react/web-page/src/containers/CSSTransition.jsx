@@ -12,7 +12,7 @@ class CSSTransition extends Component {
     }
     
     componentDidMount() {
-        setTimeout(this._startTransition, 0)
+        setTimeout(this._startTransition, 10)
     }
 
     _startTransition = () => {
