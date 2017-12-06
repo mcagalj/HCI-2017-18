@@ -44,7 +44,7 @@ export default (props) => {
     const { content, className, ...rest } = props
     const { naslov, items } = content
     
-    const cardContent = items.map((item, index) => {
+    const cardContent = items ? items.map((item, index) => {
         const { type, content } = item
         if (!components[type]) return
         const { component: Component, classname } = components[type]
@@ -55,7 +55,7 @@ export default (props) => {
                 content={content} 
                 {...rest}/>
         )
-    })
+    }) : null
 
     return (
         <div className={'Card__content-container'}>
