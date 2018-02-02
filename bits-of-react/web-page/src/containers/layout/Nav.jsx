@@ -127,7 +127,7 @@ class Nav extends Component {
                 className={'Nav__link'}
                 activeClassName={'Nav--active'}
                 to={`/${link.toLowerCase()}`}
-                onClick={this.handleNavClick}>
+            >
                 {link}
             </NavLink>))
 
@@ -136,7 +136,7 @@ class Nav extends Component {
                     className={'Nav__link'}
                     activeClassName={'Nav--active'}
                     to={`/${link.toLowerCase()}`}
-                    onClick={this.handleNavClick}>
+                >
                     {link}
                 </NavLink>))
         
