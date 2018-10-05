@@ -55,7 +55,7 @@ Ova naredba će generirati `index.html` i odgovarajuće JavaScript/CSS datoteke 
 
 - [Asinkrono dohvaćanje podataka](/bits-of-react/fetching-data)
 
-- [Web stranica kolegija](/bits-of-react/web-page) realizirana u React-u. Uz osnovne React i ReactDOM biblioteke, koristi se i React Router za navigaciju na klijentskoj strani (_client-side routing_). Također je ažurirana `webpack.config.js` datoteka. Posebno se vodilo računa o optimiranju produkcijskog koda (kojeg možete generirati izvršavanjem `npm run prod`). _Live_ verzija stranice dostupna je na: [http://marjan.fesb.hr/~mcagalj/HCI/react](http://marjan.fesb.hr/~mcagalj/HCI/react).
+- [Web stranica kolegija](/bits-of-react/web-page) realizirana u React-u. Uz osnovne React i ReactDOM biblioteke, koristi se i React Router za navigaciju na klijentskoj strani (_client-side routing_). Također je ažurirana `webpack.config.js` datoteka. Posebno se vodilo računa o optimiranju produkcijskog koda (kojeg možete generirati izvršavanjem `npm run prod`). _Live_ verzija stranice dostupna je na: [HCI in ReactJS](http://marjan.fesb.hr/~mcagalj/HCI/).
 
 - [Create React App](https://github.com/facebookincubator/create-react-app). Ukoliko želite izbjeći izravnu interakciju sa alatom kao što je Webpack, možete koristiti/instalirati modul `create-react-app`. Na navedenoj stranici možete naći mnogo korisnih uputa i savjeta vezanih uz razvoj React aplikacija.
 
